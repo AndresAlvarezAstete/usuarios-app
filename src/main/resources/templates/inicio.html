@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="~{layout/layout}">
+
+<head th:replace="layout/layout :: head">
+	<meta>
+	<title></title>
+</head>
+
+<body>
+
+	<!--<h1 th:text="${titulo}"> </h1>-->
+
+	<div class="main-panel" layout:fragment="page-content">
+		<div class="content">
+			<div class="page-inner">
+				<div class="page-header">
+					<h4 class="page-title">Dashboard</h4>
+					<ul class="breadcrumbs">
+						<li class="nav-home">
+							<a href="#">
+								<i class="flaticon-home"></i>
+							</a>
+						</li>
+						<li class="separator">
+							<i class="flaticon-right-arrow"></i>
+						</li>
+						<li class="nav-item">
+							<a href="#">Pages</a>
+						</li>
+						<li class="separator">
+							<i class="flaticon-right-arrow"></i>
+						</li>
+						<li class="nav-item">
+							<a href="#">Starter Page</a>
+						</li>
+					</ul>
+				</div>
+				<div class="page-category">Inner page content goes here</div>
+			</div>
+		</div>
+</body>
+
+</html>
